@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bob's Quiz</title>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+
+
+	<div id="container">
+		<div id="start-screen">
+			<h1>Изпробвай познанията си!</h1>
+			<p>
+				Теста съдържа 40 въпроса на различна тематика (политика, география, наука, спорт, история и други).
+				Всеки въпрос има четири възможни отговора, само един от които е верен. Всеки въпрос носи различен брой точки, като максималният брой точки на теста е 242. При 3 грешни отговора теста приключва.
+			</p>
+			<button id="start-quiz">Започни теста</button>	
+		</div>
+		
+		<div id="quiz">
+			<p id="question"></p>
+			<div id="choices"></div>
+
+			<button id="next-question">Следващ въпрос</button>
+			<p id="user-feedback"></p>
+		</div>
+		
+		<div id="end-screen">
+			<p>Твоят резултат е: <span id="final-result"></span> точки.</p>
+			<button id="restart-quiz">Започни на ново</button>
+		</div>
+	</div>
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/questions.js"></script>
+<script src="js/quiz.js"></script>
+
+</body>
+</html>

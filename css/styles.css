@@ -1,0 +1,106 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext);
+body {
+  background: url('../img/bg.png') repeat;
+  font-family: 'Open Sans', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+#container {
+  width: 600px;
+  height: 429px;
+  margin: 70px auto;
+  border: 1px solid black;
+  background-color: #616161;
+  position: relative;
+}
+#quiz {
+  display: none;
+  width: inherit;
+  height: inherit;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000 url('../img/blackboard.jpg') no-repeat;
+}
+#quiz #question {
+  color: #EDEDED;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+}
+#quiz #choices {
+  margin-left: 20px;
+}
+#quiz .userAnswer {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+#quiz .answerWrap {
+  color: #EDEDED;
+}
+#quiz #next-question {
+  margin: 20px 0 0 20px;
+  display: block;
+}
+#quiz #user-feedback {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+#start-screen {
+  width: inherit;
+  height: inherit;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('../img/start_screen_bg.png');
+  text-align: center;
+}
+#start-screen h1 {
+  color: #4FE8C4;
+  font-weight: normal;
+}
+#start-screen p {
+  color: #eee;
+  margin-bottom: 30px;
+}
+#start-screen #start-quiz {
+  background: #D1D1D1;
+  color: #12C99F;
+  font-size: 16px;
+  font-weight: bold;
+  height: 48px;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  outline: none;
+}
+#start-screen #start-quiz:hover {
+  cursor: pointer;
+}
+#start-screen #start-quiz:active {
+  box-shadow: none;
+  height: 45px;
+  margin-top: 3px;
+}
+#end-screen {
+  display: none;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000000 url('../img/blackboard.jpg') no-repeat;
+  text-align: center;
+}
+#end-screen p {
+  color: #EDEDED;
+  margin-top: 180px;
+  font-size: 26px;
+}
+#end-screen #final-result {
+  color: red;
+}
